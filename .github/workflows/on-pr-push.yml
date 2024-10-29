@@ -1,0 +1,16 @@
+name: On PR Push - Build Checks
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-checks:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Test Build All Docker Images
+        run: ./build.bash
