@@ -1,4 +1,4 @@
-FROM eqalpha/keydb:x86_64_v6.3.4
+FROM docker.io/eqalpha/keydb:x86_64_v6.3.4
 
 LABEL org.opencontainers.image.source=https://github.com/kamukirim/base-images
 

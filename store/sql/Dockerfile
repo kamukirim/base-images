@@ -1,4 +1,4 @@
-FROM yugabytedb/yugabyte:2.20.7.1-b10
+FROM docker.io/yugabytedb/yugabyte:2.20.7.1-b10
 
 ARG USER=root
 

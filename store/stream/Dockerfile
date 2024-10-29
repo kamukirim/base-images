@@ -1,4 +1,4 @@
-FROM nats:2.10.22-linux
+FROM docker.io/nats:2.10.22-linux
 
 LABEL org.opencontainers.image.source=https://github.com/kamukirim/base-images
 
