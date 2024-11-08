@@ -9,7 +9,7 @@ This repository is used to maintain common/shared docker images for `KamuKirim` 
   - Source: [docker.io/debian:12](https://hub.docker.com/_/debian)
 - Base Image for Frontend:
   - Tag: `ghcr.io/kamukirim/base-frontend:latest`
-  - Source: [ghcr.io/static-web-server/static-web-server:2-debian](https://github.com/static-web-server/static-web-server)
+  - Source: [docker.io/node:lts](https://hub.docker.com/_/node)
 - Rust Builder:
   - Tag: `ghcr.io/kamukirim/builder-rust:latest`
   - Source: [docker.io/rust:1.82.0](https://hub.docker.com/_/rust)
