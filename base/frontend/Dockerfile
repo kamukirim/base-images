@@ -1,13 +1,12 @@
-FROM ghcr.io/static-web-server/static-web-server:2-debian
+FROM docker.io/node:lts
 
 LABEL org.opencontainers.image.source=https://github.com/kamukirim/base-images
 
-ENV SERVER_ROOT="/dist"
+ENV SERVER_ROOT="/app"
 
-WORKDIR /dist
-STOPSIGNAL SIGQUIT
+WORKDIR /app
+STOPSIGNAL SIGTERM
 
-EXPOSE 80
+EXPOSE 3000
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["static-web-server"]
+CMD ["npm", "run", "start"]
