@@ -12,7 +12,7 @@ RUN apt-get update && \
 RUN mkdir -p /usr/local/share/ca-certificates
 RUN cp Cloudflare_CA.pem /usr/local/share/ca-certificates/Cloudflare_CA.crt
 RUN update-ca-certificates
-RUN rustup toolchain add nightly
+RUN rustup toolchain add nightly && rustup toolchain add stable
 RUN apt-get update && \
     apt-get install -y \
     autoconf \
