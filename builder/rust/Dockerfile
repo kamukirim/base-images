@@ -1,4 +1,4 @@
-FROM docker.io/rust:1.82.0
+FROM docker.io/rust:1.83.0
 
 LABEL org.opencontainers.image.source=https://github.com/kamukirim/base-images
 
